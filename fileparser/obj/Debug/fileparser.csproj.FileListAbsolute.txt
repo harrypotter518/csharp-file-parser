@@ -1,0 +1,12 @@
+c:\users\harry\documents\visual studio 2015\Projects\fileparser\fileparser\bin\Debug\fileparser.exe.config
+C:\Users\Harry\Documents\Visual Studio 2015\Projects\fileparser\fileparser\bin\Debug\fileparser.exe
+C:\Users\Harry\Documents\Visual Studio 2015\Projects\fileparser\fileparser\bin\Debug\fileparser.pdb
+C:\Users\Harry\Documents\Visual Studio 2015\Projects\fileparser\fileparser\obj\Debug\fileparser.csprojResolveAssemblyReference.cache
+C:\Users\Harry\Documents\Visual Studio 2015\Projects\fileparser\fileparser\obj\Debug\fileparser.exe
+C:\Users\Harry\Documents\Visual Studio 2015\Projects\fileparser\fileparser\obj\Debug\fileparser.pdb
+D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\bin\Debug\fileparser.exe.config
+D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Debug\fileparser.exe
+D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Debug\fileparser.pdb
+D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\bin\Debug\fileparser.exe
+D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\bin\Debug\fileparser.pdb
+D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Debug\fileparser.csprojResolveAssemblyReference.cache
