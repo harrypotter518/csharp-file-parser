@@ -1,0 +1,87 @@
+I need to parse a file into string arrays. I imagine 2D arrays will be needed because you can have a record array 400 appear more than once like in the data at the bottom of this request and that needs to be captured. Records 100-199 once set will stay the same for the lifecycle of the run. But the rest of the records you see in the data below can have multiple records like record 400 already mentioned can appear twice before record 899 is reached. The final record that marks the end of the data is record 899. That data should be captured, printed and then all arrays except anything within the 100-199 range should be reset to process the next set of data starting at 200. Every record except the first time 100-199 appear in the file will begin with 200 and end with 899.
+
+I want you to just print the data it parses. I don't want to see the Record ID or the Field Id just the value. However, I do want to see the record printed the first time for each of the 18 or so records in the data to be parsed at the bottom of this request (attached). Something like.
+
+For record 200 the following fields exist: and so on for each of the records for the two case as a whole seen in the data below.
+6
+0000012345
+07/01/2020
+07312020
+JOHN S SMITH
+1856 NOWHERE ST
+SOMEWHERE CA 90210
+BEVERLY HILLS
+CA
+90210
+5
+90
+1
+johnsmith@hotmail.com
+1
+
+
+Each record will contain a maximum of 99 possible fields starting from "00" in some cases and "01" in others and up to "99" so the starting value is always two digits.
+
+While each record can have a maximum of 99 fields there are only three digit records and each record starts as the first 3 characters on a given line. Each record is completed once the ` (Grave Accent) is reached. It must be noted that the record does not begin until the ` (Grave Accent) is reached with the exception of the very first record. The ` (Grave Accent) will always appear as the last character of a given line once that record has ended.
+
+The separation of each field within the record begins with a ~ (tilde) and the very first two characters (which are actually two character digits up to 99 as mentioned above)  are the fields.
+
+If a record happens to have no data then it appears on a line as a 3 digit record in the data below and ends in a ` (Grave Accent).
+
+Here is what I mean below.
+
+The first line:
+100 starts that array and any array 100-199 will not be reset. The rest of the record arrays for 200 to 899 will be reset.
+
+The second line
+200 is a record and starts the record array. The very first field that happens to be configured is 01 which has a value of 6 because as I stated above all fields are two digits and anything else up until a ~ tilde or ` grave accent is a field on that record 200. The fields on a record are always in numeric order despite the fact that some numbers skip. For instance in the first line for record 200, the fields while in order have the following values - 01, 02, 05, 06, 07, 08, 09, 12, 13, 14 you can see that while they are in numerical order 3, 4, 10, 11 are not there but they could potentially be there so that logic should be taken into consideration.
+
+The third line:
+You can see it is a continuation of record 200 and ends with field 25 which has a value of 1 hence the 251 and ends in a ` (Grave Accent) which marks the end of record 200 and the next record begins with 400. There could be records in between 200 and 400 so this should be considered.
+
+The records don't appear in order as you can see below. 200, 400, 300, 499, 450, 461, 400, 441. The fields of those records as mentioned above will appear in order though. If a record appears again like in the below DATA it becomes added to the 400 record
+
+Last part of this request.
+
+
+The following records with fields should be formatted as dates with '/' All dates are going to be 8 characters long. Example from below
+Record 400~0107012020 this is for field 01 and should be formatted like this 07/01/2020
+
+
+Record 400 with field
+01
+
+Record 499 with field
+01
+
+
+The following records with fields should be formatted as integers with , even though they are string variables. Example from below. 2500 for field 03 should be 25.00 if it has a - at the end like in 624710- it should be -6,247.10 
+
+Record 499~0107312020~02Ending Balance~032500`
+
+
+Record 499 with field
+03
+
+DATA TO USE AND TEST WITH:
+
+100~Nothing~SomethingOneHundred`
+200~016~020000012345~0507012020~0607312020~07JOHN S SMITH~081856 NOWHERE ST~09SOMEWHERE CA 90210~12BEVERLY HILLS~13CA~14
+90210~185~1990~231~24johnsmith@hotmail.com~251`
+400~0107012020~020000~03THE MAIN STUFF 1~04Some Number~052500~071000~0890`
+300~01JACKIE S KENNEDY~021`
+499~0107312020~02Some Money~032500`
+450~01Some Text`
+461`
+400~0107012020~020001~03THE MAIN STUFF 2~04Some Number~05252045~072021~0890`
+899~the end of it`
+200~016~020000012345~0507012020~0607312020~07JEFF S SMITH NUMBER 2~081856 GONE ST~09IN THE STATE OF CA 90210~12ROTTING HILLS~13GA~14
+90210~185~1990~231~24jjeffsmith@hotmail.com~251`
+400~0107012020~020000~03THE MAIN STUFF 3~04Some Number 2~052500~071000~0890`
+300~01BECKY S KENNEDY~021`
+499~0107312020~02Some Money~032500`
+450~01Some Text`
+461`
+400~0107012020~020001~03THE MAIN STUFF 4~04Some Number 3~05252045~072021~0890`
+899~the end of it again`
+
