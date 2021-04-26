@@ -3,4 +3,3 @@ D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\bin\Release
 D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\bin\Release\fileparser.pdb
 D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Release\fileparser.exe
 D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Release\fileparser.pdb
-D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Release\fileparser.csprojResolveAssemblyReference.cache
