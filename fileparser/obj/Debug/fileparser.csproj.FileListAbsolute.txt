@@ -9,4 +9,3 @@ D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Debug\f
 D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Debug\fileparser.pdb
 D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\bin\Debug\fileparser.exe
 D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\bin\Debug\fileparser.pdb
-D:\My project\Project13-C#-file-parser\CSharp-file-parser\fileparser\obj\Debug\fileparser.csprojResolveAssemblyReference.cache
